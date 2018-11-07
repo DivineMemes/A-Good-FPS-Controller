@@ -23,7 +23,7 @@ public class CameraScript : MonoBehaviour
         return angle;
     }
 
-    void Update ()
+    void Update()
     {
         yaw += Input.GetAxis("Mouse X") * speedH;
         pitch -= Input.GetAxis("Mouse Y") * speedV;
@@ -32,7 +32,7 @@ public class CameraScript : MonoBehaviour
 
         transform.eulerAngles = new Vector3(pitch, yaw, 0);
         UpdateCursorLock();
-	}
+    }
 
     public void SetCursorLock(bool value)
     {
